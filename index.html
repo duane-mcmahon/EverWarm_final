@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>EverWarm - Welcome</title>
+    <link href="CSS/style.css" rel="stylesheet">
+
+</head>
+<body onload="Hello();">
+<h1>Sale Order Form</h1>
+<h3 id="product"> </h3>
+<hr width="72%" align="left" />
+<div class="container">
+    <img id ="img5" src="FILES/millends2.jpg">
+    <img id ="img1" src="FILES/millends.jpg">
+
+    <div class="exit" id="close"><a href="goodbye.html"><img id="img2" src="FILES/EverWarm_Scenario_millends.jpg" onclick="Close();" /></a></div>
+
+    <form name="sub" onsubmit="return Authorise();">
+
+
+		<table>
+    	<tr>
+      		<td align="left"><label for="name">Name:</label></td>       
+            <td align="right"> <input type="text" name="name" id="name" value=""  class="input" placeholder="Customer Name" aria-describedby="name-format" aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" required title="firstname lastname"  /></td>
+    		</tr>
+    
+    		<tr>
+            <td align="left"><label for="telephone">Telephone:</label></td>
+            <td align="right"><input type="tel" pattern='[\(]\d{2}[\)]\d{4}[\-]\d{4}' name="telephone" id="telephone" class="input" placeholder="Telephone Number" required title='Phone Number (Format: (XX)XXXX-XXXX)' />
+            </td></tr>
+            
+            <tr>
+      		<td align="left"><label for="address">Address:</label></td>
+            <td align="right"><input type="text" name="address" id="address" value="" class="input" placeholder="Customer Address" required />
+            </td></tr>
+            
+            <tr>
+            <td align="left"><label for="quantity">Bags:</label></td>
+            <td align="right"><input type="number" name="quantity" id="quantity" class="input_qty" placeholder="Order Quantity" required min="0" />
+            </td></tr>
+            
+            <tr>
+            <td align="left"><label for="distance">Kilometres:</label></td>
+            <td align="right"><input type="number" name="distance" id="distance" class="input_qty" placeholder="Distance..." required min="0" />
+</td></tr></table>
+            <div class="s1">
+                <input type="submit" value="Submit" name="btnsubmit" id="submitButton" title="Click here to submit the order!" />  [authorised staff only]
+            </div>
+
+    </form>
+
+</div>
+
+<br/>
+<div class="container">
+<hr width="90%" align="left" />
+<h1>Sales Summary</h1>
+
+
+    <div class="s2">
+        &nbsp;&nbsp;&nbsp; <input type="button" value="Display" name="submit" id="displayButton" title="Click here to launch the summary!" onclick="DisplaySummary()" />  [authorised staff only]
+    </div>
+    <div id = "display">
+        <br />
+        <textarea  name="output" id="summary" rows="13" cols="50" >
+
+
+        </textarea>
+
+    </div>
+</div>
+
+<img id ="img4" src="FILES/hearth-fire2.jpg">
+<img id ="img3" src="FILES/hearth-fire.jpg">
+<div class="caption"><br />Click the image above to EXIT</div>
+
+<div class="bar" id = "bottom_horizontal_line"><hr width="72%" align="left" />
+    <p>&copy; 2014 Duane McMahon <br/>
+      Fair Use Disclaimer: this site is built for
+        educational purposes only.
+    </p>
+</div>
+ <script src="JS/Model.js" type="text/javascript"></script>
+ <script src="JS/Application.js" type="text/javascript"></script>
+</body>
+
+</html>

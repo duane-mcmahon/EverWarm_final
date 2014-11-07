@@ -1,0 +1,156 @@
+.container {
+
+    width: 30%;
+
+    clear: both;
+
+    
+}
+
+
+body{
+
+    background-color: sandybrown;
+
+}
+table{
+
+    width: 75%;
+}
+.input {
+    text-transform:lowercase;
+    color:#f6892e!important;
+    font-weight:bold;
+    border:0;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    width:90%;
+    float:left
+}
+
+.input_qty {
+    text-transform:lowercase;
+    color:#f6892e!important;
+    font-weight:bold;
+    border:0;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    width:40%;
+    float:left
+}
+
+#img1{
+
+    position: absolute;
+    
+    width: 20%;
+
+    left: 50%;
+    
+    height: 30%;
+    
+    
+    
+}
+
+#img2{
+
+    position: absolute;
+    
+    width: 20%;
+
+    left: 50%;
+    
+    height: 30%;
+    
+    top: 50%;
+    
+    
+}
+
+#img3{
+
+    position: absolute;
+
+    width: 20%;
+
+    left: 10%;
+
+    height: 30%;
+
+    top: 50%;
+
+    z-index: -1;
+
+
+}
+
+#img4{
+
+    position: absolute;
+
+    width: 20%;
+
+    left: 30%;
+
+    height: 30%;
+
+    top: 50%;
+
+    z-index: -1;
+
+
+}
+
+#img5{
+
+    position: absolute;
+
+    width: 20%;
+
+    left: 30%;
+
+    height: 30%;
+
+    z-index: -1;
+
+
+}
+
+#display{
+
+    visibility: hidden;
+}
+
+.caption { position: absolute; 
+
+width: 20%; 
+
+top: 80%;
+
+bottom: 0px;
+
+left: 50%;
+
+color: #ffffff;
+
+text-align:center;
+
+font-weight:bold;
+
+}
+
+.bar {
+
+    position: absolute;
+
+    width: 100%;
+
+}
+
+#bottom_horizontal_line {
+
+
+    top: 85%;
+
+}
