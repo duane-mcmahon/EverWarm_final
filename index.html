@@ -6,18 +6,30 @@
     <link href="CSS/style.css" rel="stylesheet">
 
 </head>
-<body onload="Hello();">
+<body>
 <h1>Sale Order Form</h1>
 <h3 id="product"> </h3>
 <hr width="72%" align="left" />
 <div class="container">
-    <img id ="img5" src="FILES/millends2.JPG">
+    <img id ="img5" src="FILES/millends2.jpg">
     <img id ="img1" src="FILES/millends.jpg">
 
     <div class="exit" id="close"><a href="goodbye.html"><img id="img2" src="FILES/EverWarm_Scenario_millends.jpg" onclick="Close();" /></a></div>
 
-    <form name="sub" onsubmit="return Authorise();">
+    <form name="sub" id="submission">
+<!--
 
+ Validation was handled by the HTML5 mark-up:
+
+ The following conditions have been identified as being data entry errors:
+ Any expected character string that is empty (e.g. it contains no characters),
+ any expected numerical value that is input as a character string,
+ any specified numerical value that is less than zero,
+ any value for the number of bags of mill-ends that is not a whole number.
+
+
+
+ -->
 
 		<table>
     	<tr>
@@ -59,7 +71,7 @@
 
 
     <div class="s2">
-        &nbsp;&nbsp;&nbsp; <input type="button" value="Display" name="submit" id="displayButton" title="Click here to launch the summary!" onclick="DisplaySummary()" />  [authorised staff only]
+        &nbsp;&nbsp;&nbsp; <input type="button" value="Display" name="submit" id="displayButton" title="Click here to launch the summary!" />  [authorised staff only]
     </div>
     <div id = "display">
         <br />
