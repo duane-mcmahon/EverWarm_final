@@ -2,7 +2,7 @@
 
 window.addEventListener('load', Hello);
 
-document.forms[0].addEventListener('submit',function(e) { Authorise(e); }, false);
+document.forms[0].addEventListener('submit',function(e) { Authorise(e); });
 
 document.getElementById("displayButton").addEventListener('click', DisplaySummary);
 
