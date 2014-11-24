@@ -1,12 +1,21 @@
 // PLEASE NOTE: This assignment was developed on the Chrome, Firefox & Opera browsing clients.
 
+window.addEventListener('load', Hello);
+
+document.forms[0].addEventListener('submit',function(e) { Authorise(e); }, false);
+
+document.getElementById("displayButton").addEventListener('click', DisplaySummary);
+
+
+
+
 /*
 
  Globals
 
  */
 
-var sales_orders = [];  //global vriable is a property of window object e.g. window.salesorders
+var sales_orders = [];  //global variables are a properties of window object e.g. window.salesorders
 
 var item = new Product();
 
@@ -24,20 +33,6 @@ function Hello() {
 }
 
 
-/*
-
- Validation was handled by the HTML5 mark-up:
-
- The following conditions have been identified as being data entry errors:
- Any expected character string that is empty (e.g. it contains no characters),
- any expected numerical value that is input as a character string,
- any specified numerical value that is less than zero,
- any value for the number of bags of mill-ends that is not a whole number.
-
-
-
- */
-
 
 /*
 
@@ -53,25 +48,27 @@ function Hello() {
  */
 
 
-function Authorise() {
+function Authorise(e) {
+
+	e.preventDefault();
 
     var r = window.confirm("Press to confirm that you are a member of the sales staff");
+	
     if (r == true) {
-
-        x = "You pressed OK!";
 
         this.Process();
 
-        window.document.forms['sub'].reset();
+        window.document.forms[0].reset();
 
 
     } else {
 
-        x = "You pressed Cancel!";
+        window.alert("You pressed Cancel!");
 
     }
 
-    return false;   //this line is critical to include, otherwise the page refreshes and information is lost.
+   //return false;   //this line is critical to include, otherwise the page refreshes and information is lost.
+
 }
 
 function Process() {
